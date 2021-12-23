@@ -1,0 +1,137 @@
+.blog {
+    padding: 95px 0;
+
+    @include screen(992) {
+        padding: 25px 0; 
+    }
+
+
+    .main-description {
+        padding-bottom: 27px;
+
+        @include screen(992) {
+            padding-bottom: 0;
+        }
+    }
+
+    a {
+        transition: .3s;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__item {
+        display: flex;
+        padding: 38px 0;
+
+        @include screen(992) {
+            padding: 15px 0;
+        }
+
+        @include screen(850){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & + .blog__item {
+            border-top: 1px solid #ddd;
+        }
+    }
+
+    &__image {
+        width: 460px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+
+        @include screen(900){
+            width: 360px;
+        }
+
+        @include screen(500){
+            width: 320px;
+        }
+    }
+
+    &__description {
+        flex-grow: 1;
+        padding-left: 40px;
+
+        @include screen(850) {
+            padding-left: 0;   
+        }
+    }
+
+    &__item-header {
+        display: flex;
+        align-items: center;
+        margin: 0 0 19px;
+
+        @include screen(850) {
+            justify-content: center;
+            margin: 10px 0;
+        }
+    }
+
+    &__date {
+        width: 76px;
+        height: 76px;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+        font-family: $font-montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 5px;
+        color: $grey;
+        border: 2px solid $font-color;
+        letter-spacing: 2px;
+
+        span {
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 5px 0 0;
+        }
+
+    }
+
+    &__title {
+
+        @include screen(850){
+            text-align: center;
+        }
+
+        & > a {
+            text-transform: uppercase;
+            display: block;
+            margin: 0 0 13px;
+            font-family: $font-montserrat;
+            letter-spacing: 1.3px;
+        }
+
+        div {
+            font-style: italic;
+            font-size: 13px;
+            color: $grey;
+        }
+    }
+
+    &__preview {
+        margin: 0 0 26px;
+        line-height: 1.7;
+    }
+
+    &__link {
+        color: $grey;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1.4px;
+    }
+}
+  
