@@ -1,0 +1,88 @@
+.clients {
+    background: $grey-section;
+    padding: 55px 0;
+
+    @include screen(992){
+        padding: 25px 0;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 45px;
+
+        @include screen(992){
+            margin: 0 0 15px;
+        }
+
+        @include screen(768){
+            margin: 0 0 5px;
+        }
+
+        li {
+            padding: 10px 32px;
+
+            @include screen(768){
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 55px;
+
+        @include screen(992){
+            padding-bottom: 25px;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        background: $grey;
+
+        @include screen(800){
+            width: 10px;
+            height: 10px;
+        }
+
+        &.swiper-pagination-bullet-active {
+            background: $red;
+        }
+    }
+
+    .swiper-slide {
+
+        font-size: 18px;
+        line-height: 1.67;
+        text-align: center;
+
+        @include screen(768){
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        p {
+            margin: 0 auto 28px;
+            max-width: 780px;
+
+            @include screen(992){
+                margin: 0 auto 10px;
+            }
+        }
+    }
+
+    &__swiper-author {
+        font-size: 20px;
+
+        @include screen(768) {
+            font-size: 16px; 
+        }
+    }
+}
