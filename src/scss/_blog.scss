@@ -50,8 +50,8 @@
             width: 360px;
         }
 
-        @include screen(500){
-            width: 320px;
+        @include screen(850){
+            width: 100%;
         }
     }
 
