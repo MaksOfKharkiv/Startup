@@ -74,10 +74,10 @@
                     width: calc(50% - 30px);
                     overflow: hidden;
                 }
+
                 @include screen(768) {
                     width: calc(100% - 30px);
                     margin: 5px 15px;
-                    overflow: hidden;
                 }
             }
         }

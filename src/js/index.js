@@ -64,7 +64,6 @@ $('.tabs__button').on('click', function () {
 $(".tabs__item").eq(0).fadeIn();
 
 // Swiper About
-
 $(document).ready(function (){
 
     const swiper = new Swiper('.clients__swiper', {
@@ -81,4 +80,18 @@ $(document).ready(function (){
             clickable: 'true',
           },
     });
+})
+
+//Anchor links
+$('a').on('click', function (e) {
+    e.preventDefault();
+    const hh = $('.header').outerHeight();
+    if(this.hash !== '') {
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - hh
+        }, 300, function () {
+            window.location.hash = hash - hh;
+        })
+    }
 })
