@@ -1,4 +1,4 @@
-# Webpack template
+# Startup
 
 ```powershell
 To start build:
